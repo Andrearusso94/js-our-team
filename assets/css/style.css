@@ -1,7 +1,10 @@
+body{
+    background-color: burlywood;
+}
 img{
-    display: none;
+    
     max-width: 100%;
-    text-align: center;
+   
 }
 .active{
     display: block;
@@ -11,7 +14,8 @@ img{
 .container{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    width: 80%;
+    margin: 3rem auto;
 }
 
 .card{

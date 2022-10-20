@@ -7,12 +7,12 @@ const group = [
     {
       name: 'Wayne Barnett',
       role: 'Founder & CEO',
-      image: './assets/img/angela-caroll-chief-editor.jpg',
+      image: './assets/img/wayne-barnett-founder-ceo.jpg',
     },
     {
       name: 'Angela',
       role: 'Chief Editor',
-      image: './assets/img/angela-caroll-chief-editor.jpg',
+      image: './assets/img/angela-lopez-social-media-manager.jpg',
     },
     {
       name: 'Walter Gordon',
@@ -52,7 +52,7 @@ const group = [
   <div class="card">
   <h3>${person.name}</h3>
   <p>${person.role}</p>
-  <img class="active" src"${person.image} alt="">
+  <img class="active" src="${person.image}" alt="">
 
   
  
