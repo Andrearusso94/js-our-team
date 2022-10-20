@@ -6,7 +6,7 @@ const group = [
     {
       name: 'Wayne Barnett',
       role: 'Founder & CEO',
-      image: 'wayne-barnett-founder-ceo.jpg',
+      image:'angela-caroll-chief-editor.jpg'
     },
     {
       name: 'Angela',
@@ -42,11 +42,15 @@ const group = [
   for (let i = 0; i < group.length; i++) {
     const person = group[i];
     console.log(person.name, person.role, person.image)
+
+    /* BONUS 1: Trasformare la stringa foto in una immagine effettiva*/
     const cardMarkup =  ` 
   <div class="card">
   <h3>${person.name}</h3>
   <p>${person.role}</p>
   <p>${person.image}</p>
+
+  <img class="active" src="./assets/img/angela-caroll-chief-editor.jpg" alt="">
   </di>
   `
   console.log(cardMarkup)
