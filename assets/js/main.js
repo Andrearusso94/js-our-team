@@ -6,7 +6,7 @@ const group = [
     {
       name: 'Wayne Barnett',
       role: 'Founder & CEO',
-      Image: 'wayne-barnett-founder-ceo.jpg',
+      image: 'wayne-barnett-founder-ceo.jpg',
     },
     {
       name: 'Angela',
@@ -36,3 +36,22 @@ const group = [
   ];
 
   console.log(group)
+
+  //MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+  for (let i = 0; i < group.length; i++) {
+    const person = group[i];
+    console.log(person.name, person.role, person.image)
+    const cardMarkup =  ` 
+  <div class="card">
+  <h3>${person.name}</h3>
+  <p>${person.role}</p>
+  <p>${person.image}</p>
+  </di>
+  `
+  console.log(cardMarkup)
+
+  document.querySelector('.container').insertAdjacentHTML('beforeend', cardMarkup)
+
+    
+  }
