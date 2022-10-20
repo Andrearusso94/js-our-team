@@ -2,40 +2,42 @@
 Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.*/
 
 //MILESTONE 0: Creare l’array di oggetti con le informazioni fornite.
+
 const group = [
     {
       name: 'Wayne Barnett',
       role: 'Founder & CEO',
-      image:'.img/assets/img/angela-caroll-chief-editor.jpg'
+      image: './assets/img/angela-caroll-chief-editor.jpg',
     },
     {
       name: 'Angela',
       role: 'Chief Editor',
-      image: 'img/angela-caroll-chief-editor.jpg',
+      image: './assets/img/angela-caroll-chief-editor.jpg',
     },
     {
       name: 'Walter Gordon',
       role: 'Chief Editor',
-      image: 'img/walter-gordon-office-manager.jpg',
+      image: './assets/img/walter-gordon-office-manager.jpg',
     },
     {
         name: 'Walter Gordon',
         role: 'Social Media Manager',
-        image: 'img/walter-gordon-office-manager.jpg',
+        image: './assets/img/walter-gordon-office-manager.jpg',
     },
     {
       name: 'Scott Estrada',
       role: 'Developer',
-      image: 'img/scott-estrada-developer.jpg',
+      image: './assets/img/scott-estrada-developer.jpg',
     },
     {
       name: 'Barbara Ramos',
       role: 'Graphic Designer',
-      image: 'img/barbara-ramos-graphic-designer.jpg',
+      image: './assets/img/barbara-ramos-graphic-designer.jpg',
     },
   ];
 
   console.log(group)
+
 
   //MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
 
@@ -45,13 +47,14 @@ const group = [
 
     /* BONUS 1: Trasformare la stringa foto in una immagine effettiva*/
     
+    
     const cardMarkup =  ` 
   <div class="card">
   <h3>${person.name}</h3>
   <p>${person.role}</p>
-  <p>${person.image}</p>
+  <img class="active" src"${person.image} alt="">
 
-  <img class="active" src="./assets/img/barbara-ramos-graphic-designer.jpg" alt="">
+  
  
   </di>
   `
@@ -59,5 +62,4 @@ const group = [
 
   document.querySelector('.container').insertAdjacentHTML('beforeend', cardMarkup)
 
-    
-  }
+}
