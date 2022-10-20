@@ -6,32 +6,32 @@ const group = [
     {
       name: 'Wayne Barnett',
       role: 'Founder & CEO',
-      image:'angela-caroll-chief-editor.jpg'
+      image:'./assets/img/angela-caroll-chief-editor.jpg'
     },
     {
       name: 'Angela',
       role: 'Chief Editor',
-      image: 'angela-caroll-chief-editor.jpg',
+      image: 'img/angela-caroll-chief-editor.jpg',
     },
     {
       name: 'Walter Gordon',
       role: 'Chief Editor',
-      image: 'walter-gordon-office-manager.jpg',
+      image: 'img/walter-gordon-office-manager.jpg',
     },
     {
         name: 'Walter Gordon',
         role: 'Social Media Manager',
-        image: 'walter-gordon-office-manager.jpg',
+        image: 'img/walter-gordon-office-manager.jpg',
     },
     {
       name: 'Scott Estrada',
       role: 'Developer',
-      image: 'scott-estrada-developer.jpg',
+      image: 'img/scott-estrada-developer.jpg',
     },
     {
       name: 'Barbara Ramos',
       role: 'Graphic Designer',
-      image: 'barbara-ramos-graphic-designer.jpg',
+      image: 'img/barbara-ramos-graphic-designer.jpg',
     },
   ];
 
@@ -44,13 +44,15 @@ const group = [
     console.log(person.name, person.role, person.image)
 
     /* BONUS 1: Trasformare la stringa foto in una immagine effettiva*/
+    const img = document.getElementById('image');
     const cardMarkup =  ` 
   <div class="card">
   <h3>${person.name}</h3>
   <p>${person.role}</p>
   <p>${person.image}</p>
 
-  <img class="active" src="./assets/img/angela-caroll-chief-editor.jpg" alt="">
+  <img class="active" src="${img} alt="">
+ 
   </di>
   `
   console.log(cardMarkup)

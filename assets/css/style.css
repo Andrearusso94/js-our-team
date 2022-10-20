@@ -1,6 +1,18 @@
 img{
     display: none;
+    max-width: 100%;
 }
 .active{
     display: block;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card{
+    width: calc(100% / 12 * 4);
 }
